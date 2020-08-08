@@ -1,0 +1,33 @@
+#Show{
+    color: white;
+    padding: 60px;
+    font-size: 60px;
+    align-self: right;
+    text-align: center;
+    align-items: center;
+}
+#Monitor{
+    color: white;
+    font-size: 60px;
+    width: max-content;
+    
+    float: right;
+    margin-top: -40px;
+}
+
+#firstSelect{
+    position: absolute;
+    color: gray;
+    width: max-content;
+    margin-top: -40px;
+}
+#operator{
+    color: peru;
+    position: absolute;
+    margin-left: 95%;
+    margin-top: 30px;
+    font-size: 20px;
+}
+Button {
+    border-radius: 47%;
+}
