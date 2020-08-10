@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from './Button'
-import { Container, Row, Col } from 'react-bootstrap'
+
 
 
 
@@ -9,15 +9,10 @@ export class ButtonPannel extends React.Component {
     render() {
         return (
         <div id="ButtonPannel">
-            <Container>
-                <Row>
-                    <Col xs={2} >
-                        <Button onClick={this.props.onClick} name="C" value="C" />
-                        <Button onClick={this.props.onClick} name="()" value="()" />
-                        <Button onClick={this.props.onClick} name="%" value="%" />
-                        <Button onClick={this.props.onClick} name="/" value="/" />
-                    </Col>
-                </Row>
+                <Button onClick={this.props.onClick} name="C" value="C" />
+                <Button onClick={this.props.onClick} name="()" value="()" />
+                <Button onClick={this.props.onClick} name="%" value="%" />
+                <Button onClick={this.props.onClick} name="/" value="/" />
                 <br></br>
                 <Button onClick={this.props.onClick} name="1" value="1" />
                 <Button onClick={this.props.onClick} name="2" value="2" />
@@ -37,7 +32,6 @@ export class ButtonPannel extends React.Component {
                 <Button onClick={this.props.onClick} name="0" value="0" />
                 <Button onClick={this.props.onClick} name="=" value="=" />
                 <Button onClick={this.props.onClick} name="," value="," />
-            </Container>
         </div>
         );
     }

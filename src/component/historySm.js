@@ -11,10 +11,6 @@ export default class HistorySm extends React.Component {
         };
     }
     render(){
-        const style={
-            
-        };
-
         return (
         <tr>
             <td><h1 id="first">{this.props.first}</h1></td>

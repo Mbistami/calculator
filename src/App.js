@@ -1,11 +1,12 @@
-import React, { Children } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom'
 import { ButtonPannel } from './component/ButtonPannel';
 import Calculate from './component/Calculate';
 import HistorySm from './component/historySm';
 import calcul from './functions/calcul';
 import './App.css';
 import { Container, Row, Col } from 'react-bootstrap'
+import NavSticker  from './component/NavSticker'
 
 export default class App extends React.Component {
   constructor(props){
@@ -30,8 +31,10 @@ export default class App extends React.Component {
     return (
     <div className="App">
       <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet" />
         <title>Hello, Calculator!</title>
       </head>
+      <NavSticker state={this.state} />
       <Container>
         <Row>
           <Col>
@@ -41,11 +44,7 @@ export default class App extends React.Component {
             <ButtonPannel onClick={this.handleClick} />
           </Col>
           <Col>
-            <div id="history">
-              <table>
-                {this.state.history}
-              </table>
-            </div>
+            
           </Col>
         </Row>
       </Container>

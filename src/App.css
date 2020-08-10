@@ -54,3 +54,23 @@ body{
   border: 1px solid chocolate;
   width: 100%;
 }
+.NavSticker{
+  background-color: white;
+  text-align: center;
+  margin-right: 50px;
+}
+
+.material-icons {
+  height: 50px;
+    width: 50px;
+    font-size: 30px;
+    margin-left: -5px;
+    margin-top: 8px;
+    cursor: pointer;
+    color: #999999;
+    opacity: 0.6;
+    position: absolute;
+}
+.NavSticker .container{
+  
+}
