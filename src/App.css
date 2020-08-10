@@ -43,3 +43,14 @@ body{
   margin-top: 0px;
   background-color: black;
 }
+#history {
+  color: white;
+  border: 1px solid white;
+  margin-left: 3%;
+  margin-top: -40%;
+  width: 25%;
+}
+#historySm {
+  border: 1px solid chocolate;
+  width: 100%;
+}
