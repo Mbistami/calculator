@@ -13,9 +13,9 @@ export default class HistorySm extends React.Component {
     render(){
         return (
         <tr>
-            <td><h1 id="first">{this.props.first}</h1></td>
-            <td><p id="op">{this.props.op}</p></td>
-            <td><h1 id="second">{this.props.second}</h1></td>
+            <td>{this.props.first}</td>
+            <td>{this.props.op}</td>
+            <td>{this.props.second}</td>
         </tr>
         );
     }

@@ -51,13 +51,13 @@ body{
   width: 25%;
 }
 #historySm {
-  border: 1px solid chocolate;
-  width: 100%;
+
 }
 .NavSticker{
   background-color: white;
   text-align: center;
   margin-right: 50px;
+  
 }
 
 .material-icons {
@@ -71,6 +71,12 @@ body{
     opacity: 0.6;
     position: absolute;
 }
-.NavSticker .container{
-  
+#historique{
+  left: 50%;
+  margin-left: 28%;
+  padding: 10px;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  min-width: 400px;
 }
+
