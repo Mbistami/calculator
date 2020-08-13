@@ -1,4 +1,5 @@
 import React from 'react'
+import { Container, Row, Col} from 'react-bootstrap'
 import historySm from './historySm'
 
 export default class NavSticker extends React.Component {
@@ -7,11 +8,10 @@ export default class NavSticker extends React.Component {
         this.state= {
             history: [this.props.state.history],
             containerStyle: {
-                height: '40%',
-                width: '40%',
+                height: 'max-content',
+                width: 'max-content',
                 backgroundColor: 'white',
                 position: 'absolute',
-                marginLeft: '32%',
                 display: 'none',
                 boxShadow: '0 0 20px gray',
                 marginTop: '10%',
@@ -38,24 +38,28 @@ export default class NavSticker extends React.Component {
     }
     render(){
         return(
-            <div id="NavSticker">
+            <div class="d-flex justify-content-center" id="NavSticker">
                 <div id="closer" style={this.state.closerStyle} onClick={this.handleClick}></div>
-                <div class="container" style={this.state.containerStyle} >
-                    <table id="historique">
-                        <thead>
-                            <tr>
-                                <th>First</th>
-                                <th>Operator</th>
-                                <th>Second</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {this.state.history}
-                        </tbody>
-                        <tfoot>
-                        </tfoot>
-                    </table>
-                </div>
+                            <div class="container" style={this.state.containerStyle} >
+                                <div class="row">
+                                    <div class="col d-flex justify-content-center">
+                                    <table class="" id="historique">
+                                        <thead>
+                                            <tr>
+                                                <th>First</th>
+                                                <th>Operator</th>
+                                                <th>Second</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {this.state.history}
+                                        </tbody>
+                                        <tfoot>
+                                        </tfoot>
+                                    </table>
+                                    </div>
+                                </div>
+                            </div>
                 <span class="material-icons" onClick={this.handleClick}>history</span>
             </div>
         );
