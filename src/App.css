@@ -73,10 +73,44 @@ body{
 }
 #historique{
   left: 50%;
-  margin-left: 28%;
+  margin-left: 26%;
   padding: 10px;
   border-collapse: collapse;
   font-size: 0.9em;
   min-width: 400px;
 }
 
+#historique thead tr {
+  background-color: skyblue;
+  color: '#fffff';
+  font-weight: bold;
+}
+
+#historique th,
+#historique td {
+  padding: 12px 15px;
+}
+
+#historique tbody tr {
+  border-bottom:  1px solid #dddddd;
+  color: black;
+}
+
+#historique tbody tr:nth-last-of-type(even){
+  background-color: #f3f3f3;
+}
+
+#historique tbody tr:last-of-type {
+  border-bottom: 2px solid skyblue;
+}
+
+#container {
+  background-color: white;
+  height: 30%;
+  width: 30%;
+  position: absolute;
+}
+#closer {
+  height: 100%;
+  width: 100%;
+}
