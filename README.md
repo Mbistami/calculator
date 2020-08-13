@@ -1,4 +1,4 @@
-Created with create-react-app. See the full [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html) guide.
+Example calculator created with create-react-app. See the full [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html) guide.
 
 ### `npm start`
 
