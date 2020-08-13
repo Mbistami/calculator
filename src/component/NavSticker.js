@@ -19,7 +19,7 @@ export default class NavSticker extends React.Component {
             },
             closerStyle: {
                height: '100%',
-               width: '100%',
+               width: '10%',
                position: 'absolute',
                opacity: '0.5',
                backgroundColor: 'transparent',
@@ -30,15 +30,16 @@ export default class NavSticker extends React.Component {
         this.handleClick = this.handleClick.bind(this);
     }
     handleClick(e){
-        if(this.state.containerStyle.display === 'none')
-            this.setState({containerStyle:{...this.state.containerStyle, display: 'block'}, history: this.props.state.history, closerStyle:{...this.state.closerStyle, backgroundColor: 'black', cursor: 'pointer'}})
+    
+        if(this.state.containerStyle.display === 'none' && e.target.id !== 'closer')
+            this.setState({containerStyle:{...this.state.containerStyle, display: 'block'}, history: this.props.state.history, closerStyle:{...this.state.closerStyle, backgroundColor: 'black', cursor: 'pointer',width: '100%'}})
         else if (this.state.containerStyle.display !== 'none' && this.state.history !== '')
-            this.setState({containerStyle:{...this.state.containerStyle, display: 'none'}, history: this.props.state.history, closerStyle:{...this.state.closerStyle, backgroundColor: 'transparent',cursor: 'initial'}})
+            this.setState({containerStyle:{...this.state.containerStyle, display: 'none'}, history: this.props.state.history, closerStyle:{...this.state.closerStyle, backgroundColor: 'transparent',cursor: 'initial', width: '0%'}})
     }
     render(){
         return(
             <div id="NavSticker">
-                <div id="closer" style={this.state.closerStyle} onClick={this.handleClick}>s</div>
+                <div id="closer" style={this.state.closerStyle} onClick={this.handleClick}></div>
                 <div class="container" style={this.state.containerStyle} >
                     <table id="historique">
                         <thead>
